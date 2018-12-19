@@ -1,0 +1,27 @@
+name: duffle-s3-site
+version: 0.4.1
+description: A sample S3 Website
+keywords:
+  - duffle-s3-site
+  - cnab
+  - tutorial
+maintainers:
+  - name: Ángel Barrera
+    email: angelbarrerasanchez@protonmail.com
+invocationImages:
+  cnab:
+    name: cnab
+    builder: docker
+parameters:
+  aws-default-region:
+    type: string
+    defaultValue: eu-central-1
+    destination:
+      env: AWS_DEFAULT_REGION
+    metadata:
+      description: AWS region where the S3 Bucket will be provisioned
+credentials:
+  aws-access-key-id:
+    env: "AWS_ACCESS_KEY_ID"
+  aws-secret-access-key:
+    env: "AWS_SECRET_ACCESS_KEY"

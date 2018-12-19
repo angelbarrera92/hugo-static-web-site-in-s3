@@ -1,0 +1,55 @@
+#!/bin/bash
+ACTION=${CNAB_ACTION}
+
+BUCKET_NAME=${CNAB_INSTALLATION_NAME}
+BUCKET_REGION=${AWS_DEFAULT_REGION}
+BUCKET_URL=http://${BUCKET_NAME}.s3-website.${BUCKET_REGION}.amazonaws.com/
+
+
+if [[ ${ACTION} == "install" ]]; then
+echo "hey I am installing things over here"
+
+aws s3api create-bucket --bucket ${BUCKET_NAME} --region ${BUCKET_REGION} --create-bucket-configuration LocationConstraint=${BUCKET_REGION}
+
+echo '{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Allow Public Access to All Objects",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::'${BUCKET_NAME}'/*"
+    }
+  ]
+}' > /tmp/policy.json
+
+echo '{
+  "IndexDocument": {
+    "Suffix": "index.html"
+  },
+  "ErrorDocument": {
+    "Key": "404.html"
+  },
+  "RoutingRules": [
+    {
+      "Redirect": {
+        "ReplaceKeyWith": "index.html"
+      },
+      "Condition": {
+        "KeyPrefixEquals": "/"
+      }
+    }
+  ]
+}' > /tmp/website.json
+
+aws s3api put-bucket-policy --bucket ${BUCKET_NAME} --policy file:///tmp/policy.json
+aws s3api put-bucket-website --bucket ${BUCKET_NAME} --website-configuration file:///tmp/website.json
+hugo -s /cnab/app/hellocnab/
+aws s3 cp /cnab/app/hellocnab/public s3://${BUCKET_NAME} --recursive --include "*"
+echo "The url is: ${BUCKET_URL}"
+
+elif [[ ${ACTION} == "uninstall" ]]; then
+echo "hey I am uninstalling things now"
+aws s3 rb s3://${BUCKET_NAME} --force
+fi
