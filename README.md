@@ -55,3 +55,8 @@ delete: s3://my-site-cnab/sitemap.xml
 delete: s3://my-site-cnab/tags/index.html
 remove_bucket: my-site-cnab
 ```
+
+## Links
+
+- https://engineering.ifdb.com/2017/10/quick-static-websites-on-aws-s3-and-cloudfront-with-the-aws-cli/
+- https://engineering.bitnami.com/articles/production-ready-packaging-with-cnab-and-bitnami-kubernetes-production-runtime-bkpr.html
