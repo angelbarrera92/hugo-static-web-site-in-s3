@@ -1,0 +1,3 @@
+[submodule "cnab/app/hellocnab/themes/ananke"]
+	path = cnab/app/hellocnab/themes/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
