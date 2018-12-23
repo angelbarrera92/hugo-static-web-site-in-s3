@@ -18,6 +18,10 @@ Under the hood, this package provisions the website using the [awscli](https://a
 
 See it in action in the following video:
 
+<p>
+  <img width="700" src="./demo.svg">
+</p>
+
 ## Prerequisites
 
 * AWS account with permissions to provision S3 buckets.
