@@ -116,5 +116,5 @@ $ duffle build .
 
 ```bash
 # Export the generated bundle
-duffle show hugo-static-web-site-in-s3:1.0.0 --raw > ./bundle.cnab
+$ duffle show hugo-static-web-site-in-s3:1.0.0 --raw > ./bundle.cnab
 ```
