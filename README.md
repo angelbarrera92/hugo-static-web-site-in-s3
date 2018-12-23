@@ -57,7 +57,7 @@ $ duffle key add verification-public.key --armored
 To verify the bundle, just type:
 
 ```bash
-$ duffle bundle verify -f bundle.cnab
+$ duffle bundle verify -f ./bundle.cnab
 Signed by "Angel Barrera Sanchez <angelbarrerasanchez@protonmail.com>" (5A81 FE7A A779 DE57 55EA AFAE 3512 FAD7 7C6A 475)
 ```
 
