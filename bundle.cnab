@@ -1,0 +1,64 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+{
+  "name": "hugo-static-web-site-in-s3",
+  "version": "1.0.0",
+  "description": "Example of a bundle containing a static web project, generated with HUGO and deployed in AWS S3.",
+  "keywords": [
+    "cnab",
+    "tutorial",
+    "duffle",
+    "aws",
+    "hugo",
+    "s3"
+  ],
+  "maintainers": [
+    {
+      "name": "Ángel Barrera",
+      "email": "angelbarrerasanchez@protonmail.com",
+      "url": ""
+    }
+  ],
+  "invocationImages": [
+    {
+      "imageType": "docker",
+      "image": "hugo-static-web-site-in-s3-cnab:638931b1a013c85a8f0ad66f85d19b747d1cb50b"
+    }
+  ],
+  "images": null,
+  "parameters": {
+    "aws-default-region": {
+      "type": "string",
+      "defaultValue": "eu-central-1",
+      "required": false,
+      "metadata": {
+        "description": "AWS region where the S3 Bucket will be provisioned"
+      },
+      "destination": {
+        "path": "",
+        "env": "AWS_DEFAULT_REGION"
+      }
+    }
+  },
+  "credentials": {
+    "aws-access-key-id": {
+      "path": "",
+      "env": "AWS_ACCESS_KEY_ID"
+    },
+    "aws-secret-access-key": {
+      "path": "",
+      "env": "AWS_SECRET_ACCESS_KEY"
+    }
+  }
+}
+-----BEGIN PGP SIGNATURE-----
+
+wsBcBAEBCAAQBQJcH0vdCRA1EvrXfGoEdQAA9d4IAG9yluN+QAt51nC/s8n2h9OB
+BMjxG/q0+TokOEdkomJZEI0Wo1+oW3yTkfWnMq9tr7RKv6lvvDpr5k4nQv4akNKb
+cmrkfm5l2Fxvv9fUfF9yWIsYVZKa8RvKyygIMDyJrbsF6lF92aZyWy0bOUOAm7ks
+OikWu7upybO9IZPexxJn7t1uHaA18qKI4ZuDN8m2G/mjUD1QEHQa8rhxd4VZLcDI
+BokxPXOHVT171AYRSYNvJbEdgzKKLFLWI5/BSRPEePIfG/F5G1vDbIymUBu6IbDR
+t4/j2UpXCFFoxhgQTyRBTU+TXSoQTXcee8xGMiN+vqAcCDDfnAzUbjRRNt6fuBU=
+=z3Fg
+-----END PGP SIGNATURE-----
