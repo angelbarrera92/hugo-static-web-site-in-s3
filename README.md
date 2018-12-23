@@ -18,7 +18,7 @@ Under the hood, this package provisions the website using the [awscli](https://a
 
 See it in action in the following video:
 
-![Demo](https://raw.githubusercontent.com/angelbarrera92/hugo-static-web-site-in-s3/master/demo.svg)
+![Demo](./demo.svg)
 
 ## Prerequisites
 
