@@ -18,7 +18,7 @@ Under the hood, this package provisions the website using the [awscli](https://a
 
 See it in action in the following video:
 
-![Demo](./demo.svg)
+![Demo](./demo.svg?sanitize=true)
 
 ## Prerequisites
 
