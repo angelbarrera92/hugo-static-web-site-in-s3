@@ -104,7 +104,7 @@ $ duffle install my-release -c aws-s3-creds --set aws-default-region=us-east-1 -
 You can also uninstall a release
 
 ```
-$ duffle uninstall my-release -c wordpress-creds
+$ duffle uninstall my-release -c aws-s3-creds
 ```
 
 ## Development
