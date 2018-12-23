@@ -1,10 +1,13 @@
-name: duffle-s3-site
-version: 0.4.1
-description: A sample S3 Website
+name: hugo-static-web-site-in-s3
+version: 1.0.0
+description: Example of a bundle containing a static web project, generated with HUGO and deployed in AWS S3.
 keywords:
-  - duffle-s3-site
   - cnab
   - tutorial
+  - duffle
+  - aws
+  - hugo
+  - s3
 maintainers:
   - name: Ángel Barrera
     email: angelbarrerasanchez@protonmail.com
