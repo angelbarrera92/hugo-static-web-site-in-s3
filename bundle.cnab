@@ -23,7 +23,7 @@ Hash: SHA256
   "invocationImages": [
     {
       "imageType": "docker",
-      "image": "hugo-static-web-site-in-s3-cnab:638931b1a013c85a8f0ad66f85d19b747d1cb50b"
+      "image": "angelbarrera92/hugo-static-web-site-in-s3-cnab:936f047e51078edd466088bbe329c45beda5b40f"
     }
   ],
   "images": null,
@@ -54,11 +54,11 @@ Hash: SHA256
 }
 -----BEGIN PGP SIGNATURE-----
 
-wsBcBAEBCAAQBQJcH0vdCRA1EvrXfGoEdQAA9d4IAG9yluN+QAt51nC/s8n2h9OB
-BMjxG/q0+TokOEdkomJZEI0Wo1+oW3yTkfWnMq9tr7RKv6lvvDpr5k4nQv4akNKb
-cmrkfm5l2Fxvv9fUfF9yWIsYVZKa8RvKyygIMDyJrbsF6lF92aZyWy0bOUOAm7ks
-OikWu7upybO9IZPexxJn7t1uHaA18qKI4ZuDN8m2G/mjUD1QEHQa8rhxd4VZLcDI
-BokxPXOHVT171AYRSYNvJbEdgzKKLFLWI5/BSRPEePIfG/F5G1vDbIymUBu6IbDR
-t4/j2UpXCFFoxhgQTyRBTU+TXSoQTXcee8xGMiN+vqAcCDDfnAzUbjRRNt6fuBU=
-=z3Fg
+wsBcBAEBCAAQBQJcH1tJCRA1EvrXfGoEdQAAeVgIAA/RlhrxYGZuvrEPUWRc5ToY
++oVMV4qZ4XXSTS0YJmHC9Xub1nelzZrVpj4ZBUgbAhcWmfdSZsdHhTeXuha1UAdu
+4RYzg7+aw+PlY0940JBPMzuCtP6YFfAsPMW5DFeRF7qXjpeqP8frK5dYHLRCLX9p
+JEaWATTjcQ9p/euuEUIwHQ8QGYmdYQcYlWeyFME5G5oIsDwVsImn77le2oQ9aB/I
+5VmLMtj+I5f2z4fxdYT/xZ9iXu0jNTDa3TtnLrOUUYd1TfXRkB3tQ1UUoSieGKRw
+fCnrxRgYO4288BJq5ykgpA57yF2gTboh5Qr1URa8TO6Tinw6/wX98V/J8BDgT7Y=
+=5YFd
 -----END PGP SIGNATURE-----
